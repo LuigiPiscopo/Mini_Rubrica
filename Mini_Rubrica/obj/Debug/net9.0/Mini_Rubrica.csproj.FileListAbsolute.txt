@@ -12,3 +12,4 @@
 /Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.pdb
 /Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.genruntimeconfig.cache
 /Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/ref/Mini_Rubrica.dll
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.sourcelink.json

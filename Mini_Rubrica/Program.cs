@@ -22,7 +22,7 @@ class Program
             Console.WriteLine("5 Esci ");
             Console.Write("Scegli un'opzione; \n");
 
-            string scelta = Console.ReadLine();
+            string scelta = Console.ReadLine() ?? string.Empty;
 
             switch (scelta)
             {
@@ -33,7 +33,7 @@ class Program
                     VisualizzaContatti(rubrica);
                     break;
                 case "3":
-                    CercaContatto(rubrica);
+                    CercaContattoXnomeONumero(rubrica);
                     break;
                 case "4":
                     EliminaContatto(rubrica);
@@ -53,10 +53,10 @@ class Program
     {
 
         Console.WriteLine("Inserisci il nome ");
-        string nome = Console.ReadLine();
+        string nome = Console.ReadLine() ?? string.Empty;
 
         Console.WriteLine("Inserisci il numero ");
-        string numero = Console.ReadLine();
+        string numero = Console.ReadLine() ?? string.Empty;
 
         rubrica.Add((nome, numero));
         Console.WriteLine("Contatto aggiunto con succeso ");
@@ -80,33 +80,35 @@ class Program
             Console.WriteLine($"{contatto.Nome} - {contatto.Numero}");
         }
     }
+                                // Nuova funzione CercaContattoXnomeONumero Riga 156
 
-    static void CercaContatto(List<(string Nome, string Numero)> rubrica)
-    {
-        Console.Write("Inserisci il nome da cercare \n");
-        string nomeCercato = Console.ReadLine().ToLower();
+                                // Funzione Obsoleta.
+    // static void CercaContatto(List<(string Nome, string Numero)> rubrica)
+    // {
+    //     Console.Write("Inserisci il nome da cercare \n");
+    //     string nomeCercato = (Console.ReadLine() ?? string.Empty).ToLower();
 
-        bool trovato = false;
+    //     bool trovato = false;
 
-        foreach (var contatto in rubrica)
-        {
-            if (contatto.Nome.ToLower().Contains(nomeCercato))
-            {
-                Console.WriteLine($"Contatto trovato: {contatto.Nome} - {contatto.Numero}");
-                trovato = true;
-            }
-        }
+    //     foreach (var contatto in rubrica)
+    //     {
+    //         if (contatto.Nome.ToLower().Contains(nomeCercato))
+    //         {
+    //             Console.WriteLine($"Contatto trovato: {contatto.Nome} - {contatto.Numero}");
+    //             trovato = true;
+    //         }
+    //     }
 
-        if (!trovato)
-        {
-            Console.WriteLine("Contatto non trovato.");
-        }
-    }
+    //     if (!trovato)
+    //     {
+    //         Console.WriteLine("Contatto non trovato.");
+    //     }
+    // }
 
     static void EliminaContatto(List<(string Nome, string Numero)> rubrica)
     {
         Console.Write("Inserisci il nome dal contatto da eliminare:");
-        string nomeDaEliminare = Console.ReadLine().ToLower();
+        string nomeDaEliminare = (Console.ReadLine() ?? string.Empty).ToLower();
 
         for (int i = 0; i < rubrica.Count; i++)
         {
@@ -149,6 +151,23 @@ class Program
                 }
             }
         }
+    }
+
+    static void CercaContattoXnomeONumero(List<(string Nome, string Numero)> rubrica)
+    {
+        Console.Write("Inserisci il nome o il numero da cercare: ");
+        string inputCercato = (Console.ReadLine() ?? string.Empty).ToLower();
+        bool trovato = false;
+
+        foreach(var contatto in rubrica){
+            if (contatto.Nome.ToLower().Contains(inputCercato) || contatto.Numero.Contains(inputCercato)){
+                Console.WriteLine($"Contatto trovato: {contatto.Nome} - {contatto.Numero}");
+                trovato = true;
+            }
+        }
+        if(!trovato){
+            Console.WriteLine("Contatto non trovato.");
+        }   
     }
 
 
