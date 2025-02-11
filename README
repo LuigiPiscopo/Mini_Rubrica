@@ -1,0 +1,40 @@
+# Mini Rubrica Telefonica
+
+## Descrizione
+Questo programma in C# permette di gestire una mini rubrica telefonica. Gli utenti possono aggiungere, visualizzare, cercare ed eliminare contatti, e i dati vengono salvati in un file (`rubrica.txt`) per essere persistenti tra le esecuzioni.
+
+## Funzionalità
+- **Aggiunta di un contatto**: L'utente può inserire un nome e un numero di telefono per salvarlo nella rubrica.
+- **Visualizzazione dei contatti**: Mostra tutti i contatti salvati nella rubrica.
+- **Ricerca di un contatto**: L'utente può cercare un contatto per nome.
+- **Eliminazione di un contatto**: L'utente può rimuovere un contatto dalla rubrica.
+- **Salvataggio su file**: I contatti vengono salvati su `rubrica.txt` per garantire la persistenza dei dati.
+- **Caricamento da file**: All'avvio del programma, i contatti vengono caricati dal file `rubrica.txt`.
+
+## Requisiti
+- .NET SDK installato
+- Un editor di testo (Visual Studio, Visual Studio Code o altro)
+
+## Installazione ed Esecuzione
+1. Clona o scarica il codice sorgente.
+2. Apri un terminale nella cartella del progetto.
+3. Compila ed esegui il programma con il seguente comando:
+   ```sh
+   dotnet run
+   ```
+
+## Struttura del Codice
+Il codice principale è organizzato in metodi per facilitare la gestione della rubrica:
+- `AggiungiContatto()`: Aggiunge un nuovo contatto.
+- `VisualizzaContatti()`: Mostra tutti i contatti salvati.
+- `CercaContatto()`: Permette di cercare un contatto per nome.
+- `EliminaContatto()`: Rimuove un contatto dalla rubrica.
+- `SalvaRubricaSuFile()`: Salva la rubrica nel file `rubrica.txt`.
+- `CaricaRubricaDaFile()`: Carica i contatti salvati dal file all'avvio.
+
+## Contributi
+Sentiti libero di contribuire migliorando il codice, aggiungendo nuove funzionalità o segnalando problemi.
+
+## Licenza
+Questo progetto è distribuito sotto la licenza MIT.
+

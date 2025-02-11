@@ -1,0 +1,14 @@
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/bin/Debug/net9.0/Mini_Rubrica
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/bin/Debug/net9.0/Mini_Rubrica.deps.json
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/bin/Debug/net9.0/Mini_Rubrica.runtimeconfig.json
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/bin/Debug/net9.0/Mini_Rubrica.dll
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/bin/Debug/net9.0/Mini_Rubrica.pdb
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.GeneratedMSBuildEditorConfig.editorconfig
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.AssemblyInfoInputs.cache
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.AssemblyInfo.cs
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.csproj.CoreCompileInputs.cache
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.dll
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/refint/Mini_Rubrica.dll
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.pdb
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/Mini_Rubrica.genruntimeconfig.cache
+/Users/piscopoluigi/wa/MiniRubrica/Mini_Rubrica/obj/Debug/net9.0/ref/Mini_Rubrica.dll
